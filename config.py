@@ -197,6 +197,14 @@ embeddings = init_embeddings(EMBEDDINGS_PROVIDER, EMBEDDINGS_MODEL)
 
 logger.info(f"Initialized embeddings of type: {type(embeddings)}")
 
+# Debug prints
+print(f"DB_HOST: {DB_HOST}")
+print(f"DB_PORT: {DB_PORT}")
+print(f"POSTGRES_DB: {POSTGRES_DB}")
+print(f"POSTGRES_PASSWORD: {POSTGRES_PASSWORD}")
+print(f"POSTGRES_USER: {POSTGRES_USER}")
+print(f"CONNECTION_STRING: {CONNECTION_STRING}")
+print(f"DSN: {DSN}")
 ## Vector store
 
 vector_store = get_vector_store(
